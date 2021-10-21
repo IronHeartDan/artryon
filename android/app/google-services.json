@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "159781247617",
+    "project_id": "artryon-99b4e",
+    "storage_bucket": "artryon-99b4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159781247617:android:0db489858dc742538f0b80",
+        "android_client_info": {
+          "package_name": "com.zdem.artryon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159781247617-8up0u85bnosj8acqadvm6bn9s9u4tlht.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zdem.artryon",
+            "certificate_hash": "29961bb6512aa1904b75227a006ae0994e3f7c99"
+          }
+        },
+        {
+          "client_id": "159781247617-4jl1ru2g8vf2egssmnai9avtj5r2f0i7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdQfOJkBOHzvjxZB2iEP5a0Wc65jJ0zSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159781247617-4jl1ru2g8vf2egssmnai9avtj5r2f0i7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
