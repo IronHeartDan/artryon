@@ -1,6 +1,5 @@
-import 'package:arcore_flutter_plugin/arcore_flutter_plugin.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_unity_widget/flutter_unity_widget.dart';
 
 class ArView extends StatefulWidget {
   const ArView({Key? key}) : super(key: key);
@@ -10,20 +9,18 @@ class ArView extends StatefulWidget {
 }
 
 class _ArViewState extends State<ArView> {
-  late ArCoreController arCoreController;
+  UnityWidgetController? _unityWidgetController;
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        child: ArCoreView(
-          onArCoreViewCreated: (ArCoreController controller) {
-            setState(() {
-              arCoreController = controller;
-            });
-          },
-        ),
-      ),
+    return UnityWidget(
+      onUnityCreated: onUnityCreated,
+      fullscreen: false,
     );
+  }
+
+  // Callback that connects the created controller to the unity controller
+  void onUnityCreated(controller) {
+    _unityWidgetController = controller;
   }
 }

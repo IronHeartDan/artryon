@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>159781247617-1ugpogli2m9r522139gvu574hdbg2aev.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.159781247617-1ugpogli2m9r522139gvu574hdbg2aev</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>159781247617-8up0u85bnosj8acqadvm6bn9s9u4tlht.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDxEuL49tOPZA-fEe7k3bBhcljlavxAk7w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>159781247617</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.zdem.artryon</string>
+	<key>PROJECT_ID</key>
+	<string>artryon-99b4e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>artryon-99b4e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:159781247617:ios:54eef58d10c129548f0b80</string>
+</dict>
+</plist>

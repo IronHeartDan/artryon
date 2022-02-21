@@ -1,6 +1,5 @@
 import 'package:artryon/main_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/button_list.dart';
 import 'package:flutter_signin_button/button_view.dart';
@@ -68,7 +67,7 @@ class _LogInState extends State<LogIn> {
               ),
               Row(
                 children: [
-                  Text("Or"),
+                  const Text("Or"),
                   const SizedBox(
                     width: 5,
                   ),

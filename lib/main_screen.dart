@@ -1,6 +1,5 @@
 import 'package:artryon/ar_view.dart';
 import 'package:artryon/home.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -73,23 +72,23 @@ class _MainScreenState extends State<MainScreen>
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            title: Text("Home"),
+            label: "Home",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_basket),
-            title: Text("Cart"),
+            label: "Cart",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.camera),
-            title: Text("Try On"),
+            label: "Try Ar",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
-            title: Text("Liked"),
+            label: "Liked",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            title: Text("Profile"),
+            label: "Profile",
           )
         ],
         currentIndex: _selectedIndex,
@@ -104,16 +103,18 @@ class _MainScreenState extends State<MainScreen>
   }
 
   void manageCamera() async {
-    var status = await Permission.camera.status;
-    if (status.isGranted) {
-      Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => const ArView()));
-    } else {
-      var status = await Permission.camera.request();
-      if (status.isGranted) {
-        Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => const ArView()));
-      }
-    }
+    Navigator.of(context)
+        .push(MaterialPageRoute(builder: (context) => const ArView()));
+    // var status = await Permission.camera.status;
+    // if (status.isGranted) {
+    //   Navigator.of(context)
+    //       .push(MaterialPageRoute(builder: (context) => const ArView()));
+    // } else {
+    //   var status = await Permission.camera.request();
+    //   if (status.isGranted) {
+    //     Navigator.of(context)
+    //         .push(MaterialPageRoute(builder: (context) => const ArView()));
+    //   }
+    // }
   }
 }

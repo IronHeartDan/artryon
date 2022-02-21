@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'classes.dart';
@@ -122,7 +121,7 @@ class _HomeState extends State<Home> {
                   ],
                 ),
                 const Text("Try trending outfits that suits you "),
-                Container(
+                SizedBox(
                     width: double.infinity,
                     height: 250,
                     child: ListView.builder(
