@@ -102,9 +102,25 @@ class _MainScreenState extends State<MainScreen>
     );
   }
 
+  void initCallback() {
+    Navigator.push(
+        context,
+        PageRouteBuilder(
+          pageBuilder: (context, animation1, animation2) => ArView(
+            isInit: false,
+            initCallback: () {},
+          ),
+          transitionDuration: Duration.zero,
+          reverseTransitionDuration: Duration.zero,
+        ));
+  }
+
   void manageCamera() async {
-    Navigator.of(context)
-        .push(MaterialPageRoute(builder: (context) => const ArView()));
+    Navigator.of(context).push(MaterialPageRoute(
+        builder: (context) => ArView(
+              isInit: true,
+              initCallback: initCallback,
+            )));
     // var status = await Permission.camera.status;
     // if (status.isGranted) {
     //   Navigator.of(context)
