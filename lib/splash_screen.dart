@@ -21,8 +21,9 @@ class _SplashScreenState extends State<SplashScreen> {
   void navigate() {
     var user = FirebaseAuth.instance.currentUser;
     if (user != null) {
-      Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => const MainScreen()));
+      Navigator.of(context).pushAndRemoveUntil(
+          MaterialPageRoute(builder: (context) => const MainScreen()),
+          (route) => false);
       return;
     }
     Navigator.of(context).pushAndRemoveUntil(
@@ -32,8 +33,8 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: Scaffold(
+    return Scaffold(
+      backgroundColor: HexColor("10053F"),
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
@@ -61,6 +62,6 @@ class _SplashScreenState extends State<SplashScreen> {
           ],
         ),
       ),
-    ));
+    );
   }
 }

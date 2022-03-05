@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
+		6522778927D3EA1B00A172C3 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656B32FD27C3D07D00B45858 /* UnityFramework.framework */; };
+		6522778A27D3EA1B00A172C3 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 656B32FD27C3D07D00B45858 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		656B330127C3D2A300B45858 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 656B330027C3D2A300B45858 /* GoogleService-Info.plist */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
@@ -16,6 +18,20 @@
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
 		F97DB06FEFD21C3A6E8F877C /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 573F910E73B560E58C10B186 /* Pods_Runner.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6522778B27D3EA1C00A172C3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6522778A27D3EA1B00A172C3 /* UnityFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
@@ -45,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F97DB06FEFD21C3A6E8F877C /* Pods_Runner.framework in Frameworks */,
+				6522778927D3EA1B00A172C3 /* UnityFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +148,7 @@
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
 				3A80F3E3815002F13EAFF1C7 /* [CP] Embed Pods Frameworks */,
 				55778463FC986C35A69CA22F /* [CP] Copy Pods Resources */,
+				6522778B27D3EA1C00A172C3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

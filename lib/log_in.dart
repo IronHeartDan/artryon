@@ -33,6 +33,11 @@ class _LogInState extends State<LogIn> {
 
       // Once signed in, return the UserCredential
       await FirebaseAuth.instance.signInWithCredential(credential);
+      if (FirebaseAuth.instance.currentUser != null) {
+        Navigator.of(context).pushAndRemoveUntil(
+            MaterialPageRoute(builder: (context) => const MainScreen()),
+            (route) => false);
+      }
     } catch (e) {
       if (kDebugMode) {
         print(e);

@@ -25,11 +25,13 @@ class _IntroScreenState extends State<IntroScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: Scaffold(
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: HexColor("10053F"),
+        elevation: 0,
+      ),
       body: Container(
-        padding: const EdgeInsets.only(
-            top: 20.0, left: 15.0, right: 15.0, bottom: 80.0),
+        padding: const EdgeInsets.only(left: 15.0, right: 15.0, bottom: 80.0),
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
@@ -154,6 +156,6 @@ class _IntroScreenState extends State<IntroScreen> {
           ],
         ),
       ),
-    ));
+    );
   }
 }
