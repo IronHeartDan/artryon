@@ -1,6 +1,4 @@
-import 'package:artryon/log_in.dart';
-import 'package:artryon/main_screen.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:artryon/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -21,9 +19,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: FirebaseAuth.instance.currentUser == null
-          ? const LogIn()
-          : const MainScreen(),
+      // home: FirebaseAuth.instance.currentUser == null
+      //     ? const LogIn()
+      //     : const MainScreen(),
+      home: const SplashScreen(),
     );
   }
 }
