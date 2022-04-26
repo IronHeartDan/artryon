@@ -1,4 +1,5 @@
 import 'package:artryon/classes.dart';
+import 'package:artryon/descryption_screen.dart';
 import 'package:artryon/log_in.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -87,10 +88,17 @@ class _MainScreenState extends State<MainScreen> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Image.asset(
-                          "assets/${item.image}",
-                          fit: BoxFit.contain,
-                          height: 200,
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) =>
+                                    ProductDescription(index: index)));
+                          },
+                          child: Image.asset(
+                            "assets/${item.images[0]}",
+                            fit: BoxFit.contain,
+                            height: 200,
+                          ),
                         ),
                         Text(item.name),
                         const SizedBox(

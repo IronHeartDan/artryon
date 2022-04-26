@@ -91,7 +91,7 @@ class _HomeState extends State<Home> {
                                     child: Column(
                                       children: [
                                         Image.asset(
-                                          "assets/${item.image}",
+                                          "assets/${item.images[0]}",
                                           width: 100,
                                         ),
                                       ],
